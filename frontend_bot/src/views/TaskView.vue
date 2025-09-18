@@ -64,7 +64,7 @@ export default {
 
             try {
                 const tg_user = window.Telegram.WebApp.initDataUnsafe?.user
-                const response = await fetch(`https://effective-computing-machine-7j6qr67xwr6cp99r-8000.app.github.dev//api/add`, {
+                const response = await fetch(`https://effective-computing-machine-7j6qr67xwr6cp99r-8000.app.github.dev/api/add`, {
                     method: 'POST',
                     headers: {
                         'Content-Type': 'application/json'

@@ -106,7 +106,7 @@ export default {
                 const urlParams = new URLSearchParams(window.location.search)
                 const productId = urlParams.get('product_id')
 
-                const response = await fetch('YOUR_API_URL/api/support', {
+                const response = await fetch('https://effective-computing-machine-7j6qr67xwr6cp99r-8000.app.github.dev//api/support', {
                     method: 'POST',
                     headers: {
                         'Content-Type': 'application/json'
@@ -144,7 +144,7 @@ export default {
                 const tg_user = window.Telegram.WebApp.initDataUnsafe?.user
                 if (!tg_user) return
 
-                const response = await fetch(`YOUR_API_URL/api/support/${tg_user.id}`)
+                const response = await fetch(`https://effective-computing-machine-7j6qr67xwr6cp99r-8000.app.github.dev//api/support/${tg_user.id}`)
                 
                 if (response.ok) {
                     const data = await response.json()

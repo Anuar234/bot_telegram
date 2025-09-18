@@ -54,7 +54,7 @@ export default {
                     throw new Error('Telegram user data not available')
                 }
 
-                const response = await fetch(`YOUR_API_URL/api/training-programs/${this.productId}?tg_id=${tg_user.id}`)
+                const response = await fetch(`https://effective-computing-machine-7j6qr67xwr6cp99r-8000.app.github.dev/api/training-programs/${this.productId}?tg_id=${tg_user.id}`)
                 
                 if (response.ok) {
                     const data = await response.json()
